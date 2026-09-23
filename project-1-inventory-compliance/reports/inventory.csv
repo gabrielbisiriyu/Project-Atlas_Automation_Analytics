@@ -1,0 +1,7 @@
+hostname,management_ip,role,ios_version
+hq-r1,10.10.95.13,router,15.7(3)M2
+hq-asw1,10.10.95.2,access-switch,15.2(CML_NIGHTLY_20190423)FLO_DSGS7
+hq-asw2,10.10.95.3,access-switch,15.2(CML_NIGHTLY_20190423)FLO_DSGS7
+hq-asw3,10.10.95.4,access-switch,15.2(CML_NIGHTLY_20190423)FLO_DSGS7
+hq-dsw1,10.10.95.11,distribution-switch,15.2(CML_NIGHTLY_20190423)FLO_DSGS7
+hq-dsw2,10.10.95.12,distribution-switch,15.2(CML_NIGHTLY_20190423)FLO_DSGS7

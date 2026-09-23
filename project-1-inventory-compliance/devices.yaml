@@ -1,0 +1,31 @@
+devices:
+
+  - name: hq-r1
+    host: 10.10.95.13
+    device_type: cisco_ios
+    role: router
+
+  - name: hq-asw1
+    host: 10.10.95.2
+    device_type: cisco_ios
+    role: access-switch
+
+  - name: hq-asw2
+    host: 10.10.95.3
+    device_type: cisco_ios
+    role: access-switch
+
+  - name: hq-asw3
+    host: 10.10.95.4
+    device_type: cisco_ios
+    role: access-switch
+
+  - name: hq-dsw1
+    host: 10.10.95.11
+    device_type: cisco_ios
+    role: distribution-switch
+
+  - name: hq-dsw2
+    host: 10.10.95.12
+    device_type: cisco_ios
+    role: distribution-switch

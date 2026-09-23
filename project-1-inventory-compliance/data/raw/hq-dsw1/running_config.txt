@@ -1,0 +1,264 @@
+Building configuration...
+
+Current configuration : 4741 bytes
+!
+! Last configuration change at 15:55:29 UTC Sun Sep 20 2026
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname hq-dsw1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$/E5U$EQdOK.Le9xJnmkll9lDh9/
+!
+username ennygaebs secret 5 $1$liLY$2azlvbubT8xVipeA1eDR90
+aaa new-model
+!
+!
+aaa authentication login default group tacacs+ local
+aaa authorization exec default group tacacs+ local 
+aaa accounting commands 15 default start-stop group tacacs+
+!
+!
+!
+!
+!
+!
+aaa session-id common
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain-lookup
+ip domain-name atlas.local
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+spanning-tree vlan 10,20,30,40,50,95 priority 24576
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Port-channel1
+ no switchport
+ ip address 10.10.255.9 255.255.255.252
+!
+interface Ethernet0/0
+ no switchport
+ ip address 10.10.255.1 255.255.255.252
+!
+interface Ethernet0/1
+ switchport trunk allowed vlan 50,95
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 99
+ switchport mode trunk
+!
+interface Ethernet0/2
+ switchport trunk allowed vlan 10,20,30,40,95
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 99
+ switchport mode trunk
+!
+interface Ethernet0/3
+ switchport trunk allowed vlan 10,20,30,40,95
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 99
+ switchport mode trunk
+!
+interface Ethernet1/0
+ no switchport
+ no ip address
+ channel-group 1 mode active
+!
+interface Ethernet1/1
+ no switchport
+ no ip address
+ channel-group 1 mode active
+!
+interface Ethernet1/2
+ no switchport
+ no ip address
+ channel-group 1 mode active
+!
+interface Ethernet1/3
+ no switchport
+ no ip address
+ channel-group 1 mode active
+!
+interface Ethernet2/0
+!
+interface Ethernet2/1
+!
+interface Ethernet2/2
+!
+interface Ethernet2/3
+!
+interface Ethernet3/0
+!
+interface Ethernet3/1
+!
+interface Ethernet3/2
+!
+interface Ethernet3/3
+!
+interface Ethernet4/0
+!
+interface Ethernet4/1
+!
+interface Ethernet4/2
+!
+interface Ethernet4/3
+!
+interface Ethernet5/0
+!
+interface Ethernet5/1
+!
+interface Ethernet5/2
+!
+interface Ethernet5/3
+!
+interface Serial6/0
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial6/1
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial6/2
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial6/3
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Vlan10
+ ip address 10.10.10.252 255.255.255.0
+ ip helper-address 10.10.50.10 
+ standby version 2
+ standby 0 priority 200
+ standby 1 ip 10.10.10.254
+ standby 1 priority 200
+!
+interface Vlan20
+ ip address 10.10.20.252 255.255.255.0
+ ip helper-address 10.10.50.10 
+ standby version 2
+ standby 2 ip 10.10.20.254
+ standby 2 priority 200
+!
+interface Vlan30
+ ip address 10.10.30.252 255.255.255.0
+ ip helper-address 10.10.50.10 
+ standby version 2
+ standby 3 ip 10.10.30.254
+!
+interface Vlan40
+ ip address 10.10.40.252 255.255.255.0
+ ip helper-address 10.10.50.10 
+ standby version 2
+ standby 4 ip 10.10.40.254
+!
+interface Vlan50
+ ip address 10.10.50.252 255.255.255.0
+ standby version 2
+ standby 5 ip 10.10.50.254
+ standby 5 priority 200
+ standby 5 preempt
+!
+interface Vlan95
+ ip address 10.10.95.11 255.255.255.0
+ standby version 2
+ standby 0 priority 200
+ standby 95 ip 10.10.95.1
+!
+router ospf 1
+ router-id 12.12.12.12
+ passive-interface Vlan10
+ passive-interface Vlan20
+ passive-interface Vlan30
+ passive-interface Vlan40
+ passive-interface Vlan50
+ passive-interface Vlan95
+ network 10.10.0.0 0.0.255.255 area 0
+ network 10.255.255.0 0.0.0.255 area 0
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+ip access-list standard management
+ permit 10.10.95.0 0.0.0.255
+!
+!
+logging trap notifications
+logging host 10.10.50.10
+!
+!
+tacacs server ATLAS-TACACS
+ address ipv4 10.10.50.10
+ key segelulu96
+!
+!
+!
+control-plane
+!
+banner motd ^C
+********************************************************
+*              Atlas Technologies Ltd.                 *
+*                                                      *
+*  WARNING: Authorized Personnel Only                  *
+*                                                      *
+*  Unauthorized access is prohibited.                  *
+*  This system is monitored and all activity           *
+*  may be logged for security and audit purposes.      *
+********************************************************
+^^C
+!
+line con 0
+ password 7 0215015C0E0A1A2D59
+ logging synchronous
+line aux 0
+line vty 0 4
+ access-class management in
+ transport input ssh
+!
+ntp server 10.10.50.10
+!
+!
+end

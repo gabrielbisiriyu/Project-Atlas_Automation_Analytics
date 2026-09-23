@@ -1,0 +1,318 @@
+Building configuration...
+
+Current configuration : 7404 bytes
+!
+! Last configuration change at 15:55:25 UTC Sun Sep 20 2026
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname hq-asw1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$k9Y/$aNmH9ymp..PlqCGfQ2vGQ/
+!
+username ennygaebs secret 5 $1$z6T5$xzB7fneEE45FZAp/ncKnV.
+aaa new-model
+!
+!
+aaa authentication login default group tacacs+ local
+aaa authorization exec default group tacacs+ local 
+aaa accounting commands 15 default start-stop group tacacs+
+!
+!
+!
+!
+!
+!
+aaa session-id common
+!
+!
+!
+!
+!
+!
+!
+!
+ip dhcp snooping vlan 10,20,30,40,50,95
+no ip dhcp snooping information option
+ip dhcp snooping
+no ip domain-lookup
+ip domain-name atlas.local
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree portfast edge default
+spanning-tree portfast edge bpduguard default
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Ethernet0/0
+ switchport trunk allowed vlan 50,95
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 99
+ switchport mode trunk
+ ip dhcp snooping trust
+!
+interface Ethernet0/1
+ switchport trunk allowed vlan 50,95
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 99
+ switchport mode trunk
+ ip dhcp snooping trust
+!
+interface Ethernet0/2
+ switchport access vlan 50
+ switchport mode access
+ switchport nonegotiate
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security mac-address sticky 0050.0000.0d00
+ switchport port-security
+ ip dhcp snooping trust
+!
+interface Ethernet0/3
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet1/0
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet1/1
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet1/2
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet1/3
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet2/0
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet2/1
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet2/2
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet2/3
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet3/0
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet3/1
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet3/2
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet3/3
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet4/0
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet4/1
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet4/2
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet4/3
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet5/0
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet5/1
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet5/2
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Ethernet5/3
+ switchport access vlan 95
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ switchport port-security
+!
+interface Serial6/0
+ no ip address
+ shutdown
+ no fair-queue
+ serial restart-delay 0
+!
+interface Serial6/1
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial6/2
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial6/3
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Vlan95
+ ip address 10.10.95.2 255.255.255.0
+!
+ip default-gateway 10.10.95.1
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip route 0.0.0.0 0.0.0.0 10.10.95.1
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+ip access-list standard management
+ permit 10.10.95.0 0.0.0.255
+!
+!
+logging trap notifications
+logging host 10.10.50.10
+!
+!
+tacacs server ATLAS-TACACS
+ address ipv4 10.10.50.10
+ key segelulu96
+!
+!
+!
+control-plane
+!
+banner motd ^C
+********************************************************
+*              Atlas Technologies Ltd.                 *
+*                                                      *
+*  WARNING: Authorized Personnel Only                  *
+*                                                      *
+*  Unauthorized access is prohibited.                  *
+*  This system is monitored and all activity           *
+*  may be logged for security and audit purposes.      *
+********************************************************
+^^C
+!
+line con 0
+ password 7 04480E010A2D59421C
+ logging synchronous
+line aux 0
+line vty 0 4
+ access-class management in
+ transport input ssh
+!
+ntp server 10.10.50.10
+!
+!
+end

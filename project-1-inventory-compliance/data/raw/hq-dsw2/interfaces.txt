@@ -1,0 +1,28 @@
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            10.10.255.5     YES NVRAM  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Ethernet1/0            unassigned      YES manual up                    up      
+Ethernet1/1            unassigned      YES manual up                    up      
+Ethernet1/2            unassigned      YES manual up                    up      
+Ethernet1/3            unassigned      YES manual up                    up      
+Ethernet2/0            unassigned      YES unset  up                    up      
+Ethernet2/1            unassigned      YES unset  up                    up      
+Ethernet2/2            unassigned      YES unset  up                    up      
+Ethernet2/3            unassigned      YES unset  up                    up      
+Ethernet3/0            unassigned      YES unset  up                    up      
+Ethernet3/1            unassigned      YES unset  up                    up      
+Ethernet3/2            unassigned      YES unset  up                    up      
+Ethernet3/3            unassigned      YES unset  up                    up      
+Serial4/0              unassigned      YES NVRAM  administratively down down    
+Serial4/1              unassigned      YES NVRAM  administratively down down    
+Serial4/2              unassigned      YES NVRAM  administratively down down    
+Serial4/3              unassigned      YES NVRAM  administratively down down    
+Port-channel1          10.10.255.10    YES NVRAM  up                    up      
+Vlan10                 10.10.10.253    YES NVRAM  up                    up      
+Vlan20                 10.10.20.253    YES NVRAM  up                    up      
+Vlan30                 10.10.30.253    YES NVRAM  up                    up      
+Vlan40                 10.10.40.253    YES NVRAM  up                    up      
+Vlan50                 10.10.50.253    YES NVRAM  up                    up      
+Vlan95                 10.10.95.12     YES NVRAM  up                    up      

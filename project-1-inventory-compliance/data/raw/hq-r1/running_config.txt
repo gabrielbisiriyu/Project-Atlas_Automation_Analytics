@@ -1,0 +1,215 @@
+Building configuration...
+
+  
+Current configuration : 2987 bytes
+!
+version 15.7
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname hq-r1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$xDE3$UYIWFQVEkJAvbeOAap1EZ0
+!
+aaa new-model
+!
+!
+aaa authentication login default group tacacs+ local
+aaa authorization exec default group tacacs+ local 
+aaa accounting commands 15 default start-stop group tacacs+
+!
+!
+!
+!
+!
+aaa session-id common
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+
+
+!
+!
+!
+!
+ip domain name atlas.local
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+domain atlas.local
+!
+!
+!
+!
+!
+!
+!
+!
+username ennygaebs secret 5 $1$uS9v$yHl9WCYXRbR2IqzTVL62m1
+!
+redundancy
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 11.11.11.11 255.255.255.255
+ ip ospf 1 area 0
+!
+interface Loopback1
+ ip address 10.10.95.13 255.255.255.255
+ ip ospf 1 area 0
+!
+interface Ethernet0/0
+ ip address 10.10.255.2 255.255.255.252
+ ip ospf 1 area 0
+ duplex auto
+!
+interface Ethernet0/1
+ ip address 10.10.255.6 255.255.255.252
+ ip ospf 1 area 0
+ duplex auto
+!
+interface Ethernet0/2
+ description #TO_hq-fw#
+ ip address 10.10.255.14 255.255.255.252
+ duplex auto
+!
+interface Ethernet0/3
+ ip address dhcp
+ duplex auto
+!
+interface Ethernet1/0
+ no ip address
+ shutdown
+ duplex auto
+!
+interface Ethernet1/1
+ no ip address
+ shutdown
+ duplex auto
+!
+interface Ethernet1/2
+ no ip address
+ shutdown
+ duplex auto
+!
+interface Ethernet1/3
+ no ip address
+ shutdown
+ duplex auto
+!
+interface Serial2/0
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial2/1
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial2/2
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial2/3
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+router ospf 1
+ default-information originate
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+ip route 0.0.0.0 0.0.0.0 10.255.254.1
+ip route 0.0.0.0 0.0.0.0 10.10.255.13
+!
+ip access-list standard management
+ permit 10.10.95.0 0.0.0.255
+!
+logging trap notifications
+logging host 10.10.50.10
+ipv6 ioam timestamp
+!
+!
+tacacs server ATLAS-TACACS
+ address ipv4 10.10.50.10
+ key segelulu96
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+banner motd ^CC
+********************************************************
+*              Atlas Technologies Ltd.                 *
+*                                                      *
+*  WARNING: Authorized Personnel Only                  *
+*                                                      *
+*  Unauthorized access is prohibited.                  *
+*  This system is monitored and all activity           *
+*  may be logged for security and audit purposes.      *
+********************************************************
+^C
+!
+line con 0
+ password 7 0518030824405B050C
+ logging synchronous
+line aux 0
+line vty 0 4
+ access-class management in
+ exec-timeout 5 0
+ transport input ssh
+!
+ntp server 10.10.50.10
+!
+end

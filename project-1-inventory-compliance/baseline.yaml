@@ -1,0 +1,14 @@
+ntp:
+  server: "10.10.50.10"
+
+tacacs:
+  server: "10.10.50.10"
+
+ssh:
+  version: 2
+
+syslog:
+  server: "10.10.50.10"
+
+management_acl:
+  name: "management"
