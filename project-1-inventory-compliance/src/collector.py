@@ -20,10 +20,8 @@ def load_devices(path):
 
 
 def collect_device(device):
-    #username = os.environ["NET_USERNAME"]
-    #password = os.environ["NET_PASSWORD"]
-    username = "ennygaebs"
-    password = "segelulu96"
+    username = os.environ["NET_USERNAME"]
+    password = os.environ["NET_PASSWORD"]
     connection_parameters = {
         "device_type": device["device_type"],
         "host": device["host"],
