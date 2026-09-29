@@ -1,0 +1,4 @@
+Sep  7 16:40:21 10.10.255.6 53: *Sep  7 16:52:27.594: %OSPF-5-ADJCHG: Process 1, Nbr 12.12.12.12 on Ethernet0/0 from FULL to DOWN, Neighbor Down: Dead timer expired
+Sep  7 16:40:21 10.10.255.6 54: *Sep  7 16:52:27.594: %OSPF-5-ADJCHG: Process 1, Nbr 13.13.13.13 on Ethernet0/1 from FULL to DOWN, Neighbor Down: Dead timer expired
+Sep  7 16:40:21 10.10.255.6 55: *Sep  7 16:52:28.437: %OSPF-5-ADJCHG: Process 1, Nbr 12.12.12.12 on Ethernet0/0 from LOADING to FULL, Loading Done
+Sep  7 16:40:21 10.10.255.6 56: *Sep  7 16:52:28.534: %OSPF-5-ADJCHG: Process 1, Nbr 13.13.13.13 on Ethernet0/1 from LOADING to FULL, Loading Done

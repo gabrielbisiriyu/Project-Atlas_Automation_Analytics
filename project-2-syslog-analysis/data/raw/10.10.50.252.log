@@ -1,0 +1,89 @@
+Aug 28 12:57:32 10.10.50.252 97: *Aug 28 12:57:31.540: %HSRP-5-STATECHANGE: Vlan40 Grp 4 state Speak -> Standby
+Aug 28 12:57:33 10.10.50.252 98: *Aug 28 12:57:33.146: %HSRP-5-STATECHANGE: Vlan30 Grp 3 state Speak -> Standby
+Aug 28 12:57:41 10.10.50.252 99: *Aug 28 12:57:40.651: %HSRP-5-STATECHANGE: Vlan95 Grp 95 state Speak -> Standby
+Aug 29 21:12:58 10.10.50.252 99: *Aug 29 21:12:58.654: %HSRP-5-STATECHANGE: Vlan40 Grp 4 state Speak -> Standby
+Sep  1 07:26:54 10.10.50.252 94: *Sep  1 07:26:52.917: %HSRP-5-STATECHANGE: Vlan50 Grp 5 state Standby -> Active
+Sep  1 07:26:54 10.10.50.252 95: *Sep  1 07:26:53.473: %HSRP-5-STATECHANGE: Vlan20 Grp 2 state Standby -> Active
+Sep  1 07:26:55 10.10.50.252 96: *Sep  1 07:26:54.428: %HSRP-5-STATECHANGE: Vlan10 Grp 1 state Standby -> Active
+Sep  1 07:27:13 10.10.50.252 97: *Sep  1 07:27:12.613: %HSRP-5-STATECHANGE: Vlan95 Grp 95 state Speak -> Standby
+Sep  1 07:27:13 10.10.50.252 98: *Sep  1 07:27:13.590: %HSRP-5-STATECHANGE: Vlan30 Grp 3 state Speak -> Standby
+Sep  1 07:27:14 10.10.50.252 99: *Sep  1 07:27:13.863: %HSRP-5-STATECHANGE: Vlan40 Grp 4 state Speak -> Standby
+Sep  1 07:47:54 10.10.50.252 100: *Sep  1 08:47:53.926: %OSPF-5-ADJCHG: Process 1, Nbr 11.11.11.11 on Ethernet0/0 from FULL to DOWN, Neighbor Down: Dead timer expired
+Sep  1 07:48:15 10.10.50.252 101: *Sep  1 08:48:14.631: %OSPF-5-ADJCHG: Process 1, Nbr 11.11.11.11 on Ethernet0/0 from LOADING to FULL, Loading Done
+Sep  1 09:53:09 10.10.50.252 102: *Sep  1 11:55:13.069: %OSPF-5-ADJCHG: Process 1, Nbr 13.13.13.13 on Port-channel1 from FULL to DOWN, Neighbor Down: Dead timer expired
+Sep  1 09:53:09 10.10.50.252 103: *Sep  1 11:55:13.070: %OSPF-5-ADJCHG: Process 1, Nbr 11.11.11.11 on Ethernet0/0 from FULL to DOWN, Neighbor Down: Dead timer expired
+Sep  1 09:53:15 10.10.50.252 104: *Sep  1 11:55:18.363: %OSPF-5-ADJCHG: Process 1, Nbr 11.11.11.11 on Ethernet0/0 from LOADING to FULL, Loading Done
+Sep  1 09:53:15 10.10.50.252 105: *Sep  1 11:55:18.395: %OSPF-5-ADJCHG: Process 1, Nbr 13.13.13.13 on Port-channel1 from LOADING to FULL, Loading Done
+Sep  1 17:45:39 10.10.50.252 94: *Sep  1 17:45:39.050: %OSPF-5-ADJCHG: Process 1, Nbr 13.13.13.13 on Port-channel1 from LOADING to FULL, Loading Done
+Sep  1 17:45:48 10.10.50.252 95: *Sep  1 17:45:47.692: %HSRP-5-STATECHANGE: Vlan20 Grp 2 state Standby -> Active
+Sep  1 17:45:50 10.10.50.252 96: *Sep  1 17:45:49.138: %HSRP-5-STATECHANGE: Vlan50 Grp 5 state Standby -> Active
+Sep  1 17:45:59 10.10.50.252 97: *Sep  1 17:45:58.286: %HSRP-5-STATECHANGE: Vlan30 Grp 3 state Speak -> Standby
+Sep  1 17:45:59 10.10.50.252 98: *Sep  1 17:45:58.714: %HSRP-5-STATECHANGE: Vlan10 Grp 1 state Standby -> Active
+Sep  1 17:46:12 10.10.50.252 99: *Sep  1 17:46:11.690: %HSRP-5-STATECHANGE: Vlan40 Grp 4 state Speak -> Standby
+Sep  1 17:46:12 10.10.50.252 100: *Sep  1 17:46:12.050: %HSRP-5-STATECHANGE: Vlan95 Grp 95 state Speak -> Standby
+Sep  1 18:30:52 10.10.50.252 101: *Sep  1 19:30:50.988: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 18:31:05 10.10.50.252 102: *Sep  1 19:31:04.277: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 18:31:12 10.10.50.252 103: *Sep  1 19:31:11.151: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 18:31:21 10.10.50.252 104: *Sep  1 19:31:20.046: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 18:31:27 10.10.50.252 105: *Sep  1 19:31:25.606: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 18:31:39 10.10.50.252 106: *Sep  1 19:31:37.370: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 18:35:27 10.10.50.252 107: *Sep  1 19:35:25.858: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 18:35:54 10.10.50.252 108: *Sep  1 19:35:52.361: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 18:37:12 10.10.50.252 109: *Sep  1 19:37:10.890: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 18:37:37 10.10.50.252 110: *Sep  1 19:37:35.684: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:07:00 10.10.50.252 100: *Sep  2 10:06:59.434: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:07:22 10.10.50.252 101: *Sep  2 10:07:21.948: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:29:31 10.10.50.252 102: *Sep  2 10:29:30.896: %SYS-5-CONFIG_I: Configured from console by gaebs on vty0 (10.10.95.200)
+Sep  2 09:42:55 10.10.50.252 103: *Sep  2 10:42:52.474: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 09:43:27 10.10.50.252 104: *Sep  2 10:43:25.018: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 09:50:28 10.10.50.252 105: *Sep  2 10:50:26.072: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 09:51:18 10.10.50.252 106: *Sep  2 10:51:15.405: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 09:53:16 10.10.50.252 107: *Sep  2 10:53:13.166: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 09:54:00 10.10.50.252 108: *Sep  2 10:53:57.723: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:04:37 10.10.50.252 109: *Sep  2 11:04:35.023: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:05:04 10.10.50.252 110: *Sep  2 11:05:01.488: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:06:09 10.10.50.252 111: *Sep  2 11:06:06.984: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:06:35 10.10.50.252 112: *Sep  2 11:06:33.165: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:11:27 10.10.50.252 113: *Sep  2 11:11:25.156: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:11:44 10.10.50.252 114: *Sep  2 11:11:42.081: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:12:10 10.10.50.252 115: *Sep  2 11:12:07.535: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:13:47 10.10.50.252 116: *Sep  2 11:13:44.886: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  3 15:46:24 10.10.50.252 94: *Sep  3 15:46:24.647: %HSRP-5-STATECHANGE: Vlan50 Grp 5 state Standby -> Active
+Sep  3 15:46:26 10.10.50.252 95: *Sep  3 15:46:26.573: %HSRP-5-STATECHANGE: Vlan20 Grp 2 state Standby -> Active
+Sep  3 15:46:26 10.10.50.252 96: *Sep  3 15:46:27.088: %HSRP-5-STATECHANGE: Vlan10 Grp 1 state Standby -> Active
+Sep  3 15:46:35 10.10.50.252 97: *Sep  3 15:46:35.082: %HSRP-5-STATECHANGE: Vlan95 Grp 95 state Speak -> Standby
+Sep  3 15:46:45 10.10.50.252 98: *Sep  3 15:46:45.354: %HSRP-5-STATECHANGE: Vlan30 Grp 3 state Speak -> Standby
+Sep  3 15:46:49 10.10.50.252 99: *Sep  3 15:46:49.771: %HSRP-5-STATECHANGE: Vlan40 Grp 4 state Speak -> Standby
+Sep  3 17:26:45 10.10.50.252 94: *Sep  3 17:26:45.087: %HSRP-5-STATECHANGE: Vlan20 Grp 2 state Standby -> Active
+Sep  3 17:26:46 10.10.50.252 95: *Sep  3 17:26:46.112: %HSRP-5-STATECHANGE: Vlan10 Grp 1 state Standby -> Active
+Sep  3 17:26:46 10.10.50.252 96: *Sep  3 17:26:46.198: %HSRP-5-STATECHANGE: Vlan50 Grp 5 state Standby -> Active
+Sep  3 17:27:04 10.10.50.252 97: *Sep  3 17:27:03.589: %HSRP-5-STATECHANGE: Vlan40 Grp 4 state Speak -> Standby
+Sep  3 17:27:06 10.10.50.252 98: *Sep  3 17:27:06.393: %HSRP-5-STATECHANGE: Vlan95 Grp 95 state Speak -> Standby
+Sep  3 17:27:17 10.10.50.252 99: *Sep  3 17:27:17.270: %HSRP-5-STATECHANGE: Vlan30 Grp 3 state Speak -> Standby
+Sep  7 16:40:20 10.10.50.252 98: *Sep  7 16:40:20.269: %HSRP-5-STATECHANGE: Vlan30 Grp 3 state Standby -> Active
+Sep  7 16:40:20 10.10.50.252 99: *Sep  7 16:40:20.270: %HSRP-5-STATECHANGE: Vlan95 Grp 95 state Standby -> Active
+Sep  7 16:40:20 10.10.50.252 100: *Sep  7 16:40:20.284: %HSRP-5-STATECHANGE: Vlan40 Grp 4 state Standby -> Active
+Sep  7 16:40:21 10.10.50.252 101: *Sep  7 16:52:28.073: %OSPF-5-ADJCHG: Process 1, Nbr 13.13.13.13 on Port-channel1 from FULL to DOWN, Neighbor Down: Dead timer expired
+Sep  7 16:40:21 10.10.50.252 102: *Sep  7 16:52:28.073: %OSPF-5-ADJCHG: Process 1, Nbr 11.11.11.11 on Ethernet0/0 from FULL to DOWN, Neighbor Down: Dead timer expired
+Sep  7 16:40:21 10.10.50.252 103: *Sep  7 16:52:28.099: %HSRP-5-STATECHANGE: Vlan95 Grp 95 state Active -> Speak
+Sep  7 16:40:21 10.10.50.252 104: *Sep  7 16:52:28.135: %HSRP-5-STATECHANGE: Vlan30 Grp 3 state Active -> Speak
+Sep  7 16:40:21 10.10.50.252 105: *Sep  7 16:52:28.135: %HSRP-5-STATECHANGE: Vlan40 Grp 4 state Active -> Speak
+Sep  7 16:40:21 10.10.50.252 106: *Sep  7 16:52:28.633: %OSPF-5-ADJCHG: Process 1, Nbr 11.11.11.11 on Ethernet0/0 from LOADING to FULL, Loading Done
+Sep  7 16:40:26 10.10.50.252 107: *Sep  7 16:52:33.156: %OSPF-5-ADJCHG: Process 1, Nbr 13.13.13.13 on Port-channel1 from LOADING to FULL, Loading Done
+Sep  7 16:40:33 10.10.50.252 108: *Sep  7 16:52:39.495: %HSRP-5-STATECHANGE: Vlan40 Grp 4 state Speak -> Standby
+Sep  7 16:40:33 10.10.50.252 109: *Sep  7 16:52:40.266: %HSRP-5-STATECHANGE: Vlan30 Grp 3 state Speak -> Standby
+Sep  7 16:40:34 10.10.50.252 110: *Sep  7 16:52:40.816: %HSRP-5-STATECHANGE: Vlan95 Grp 95 state Speak -> Standby
+Sep 14 16:57:54 10.10.50.252 98: *Sep 14 16:57:52.945: %HSRP-5-STATECHANGE: Vlan95 Grp 95 state Speak -> Standby
+Sep 14 22:19:17 10.10.50.252 91: *Sep 14 22:19:17.230: %HSRP-5-STATECHANGE: Vlan50 Grp 5 state Standby -> Active
+Sep 14 22:19:18 10.10.50.252 92: *Sep 14 22:19:18.776: %HSRP-5-STATECHANGE: Vlan10 Grp 1 state Standby -> Active
+Sep 14 22:19:28 10.10.50.252 93: *Sep 14 22:19:28.785: %HSRP-5-STATECHANGE: Vlan20 Grp 2 state Standby -> Active
+Sep 14 22:19:28 10.10.50.252 94: *Sep 14 22:19:28.946: %HSRP-5-STATECHANGE: Vlan95 Grp 95 state Speak -> Standby
+Sep 14 22:19:42 10.10.50.252 95: *Sep 14 22:19:42.488: %HSRP-5-STATECHANGE: Vlan30 Grp 3 state Speak -> Standby
+Sep 14 22:19:52 10.10.50.252 96: *Sep 14 22:19:52.918: %HSRP-5-STATECHANGE: Vlan40 Grp 4 state Speak -> Standby
+Sep 15 09:02:58 10.10.50.252 97: *Sep 15 09:02:58.383: %HSRP-5-STATECHANGE: Vlan30 Grp 3 state Speak -> Standby
+Sep 15 09:03:00 10.10.50.252 98: *Sep 15 09:02:59.653: %HSRP-5-STATECHANGE: Vlan40 Grp 4 state Speak -> Standby
+Sep 16 08:37:20 10.10.50.252 98: *Sep 16 08:37:19.693: %HSRP-5-STATECHANGE: Vlan30 Grp 3 state Speak -> Standby
+Sep 16 08:37:24 10.10.50.252 99: *Sep 16 08:37:22.984: %HSRP-5-STATECHANGE: Vlan95 Grp 95 state Speak -> Standby
+Sep 16 09:13:41 10.10.50.252 95: *Sep 16 09:13:42.003: %HSRP-5-STATECHANGE: Vlan95 Grp 95 state Speak -> Standby
+Sep 16 09:13:43 10.10.50.252 96: *Sep 16 09:13:43.517: %HSRP-5-STATECHANGE: Vlan30 Grp 3 state Speak -> Standby
+Sep 16 09:13:52 10.10.50.252 97: *Sep 16 09:13:53.264: %HSRP-5-STATECHANGE: Vlan40 Grp 4 state Speak -> Standby

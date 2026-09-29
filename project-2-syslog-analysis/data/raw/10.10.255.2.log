@@ -1,0 +1,50 @@
+Aug 15 21:27:26 10.10.255.2 5: *Aug 15 22:27:25.283: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Aug 15 21:45:52 10.10.255.2 6: *Aug 15 22:45:50.968: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Aug 31 12:07:49 10.10.255.2 53: *Aug 31 13:07:48.115: %TAC-3-SERVCONF: Server config failure: A server already exists with the same address.
+Aug 31 12:27:25 10.10.255.2 54: *Aug 31 13:27:23.738: %SYS-5-CONFIG_I: Configured from console by console
+Sep  1 07:05:54 10.10.255.2 53: *Sep  1 08:05:53.491: %SYS-5-CONFIG_I: Configured from console by console
+Sep  1 07:33:13 10.10.255.2 54: *Sep  1 08:33:12.214: %LINK-3-UPDOWN: Interface Ethernet1/3, changed state to up
+Sep  1 07:33:13 10.10.255.2 55: *Sep  1 08:33:13.219: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1/3, changed state to up
+Sep  1 07:34:23 10.10.255.2 56: *Sep  1 08:34:22.672: %LINK-5-CHANGED: Interface Ethernet1/3, changed state to administratively down
+Sep  1 07:34:23 10.10.255.2 57: *Sep  1 08:34:23.675: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1/3, changed state to down
+Sep  1 07:34:29 10.10.255.2 58: *Sep  1 08:34:28.010: %SYS-5-CONFIG_I: Configured from console by gaebs on vty0 (10.10.95.200)
+Sep  1 07:43:34 10.10.255.2 59: *Sep  1 08:43:33.840: %SYS-5-CONFIG_I: Configured from console by gaebs on console
+Sep  1 09:02:34 10.10.255.2 37: *Sep  1 10:02:33.570: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 09:53:09 10.10.255.2 38: *Sep  1 11:55:10.556: %OSPF-5-ADJCHG: Process 1, Nbr 13.13.13.13 on Ethernet0/1 from FULL to DOWN, Neighbor Down: Dead timer expired
+Sep  1 09:53:09 10.10.255.2 39: *Sep  1 11:55:11.000: %OSPF-5-ADJCHG: Process 1, Nbr 12.12.12.12 on Ethernet0/0 from FULL to DOWN, Neighbor Down: Dead timer expired
+Sep  1 17:26:50 10.10.255.2 45: *Sep  1 18:26:48.924: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 17:27:25 10.10.255.2 46: *Sep  1 18:27:23.920: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 17:32:45 10.10.255.2 47: *Sep  1 18:32:43.730: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 18:01:44 10.10.255.2 48: *Sep  1 19:01:42.917: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 18:02:34 10.10.255.2 49: *Sep  1 19:02:33.068: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 18:06:57 10.10.255.2 50: *Sep  1 19:06:55.876: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 18:10:27 10.10.255.2 51: *Sep  1 19:10:25.929: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 18:28:36 10.10.255.2 52: *Sep  1 19:28:35.261: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 18:31:38 10.10.255.2 53: *Sep  1 19:31:37.265: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 18:35:54 10.10.255.2 54: *Sep  1 19:35:52.435: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  1 18:37:37 10.10.255.2 55: *Sep  1 19:37:35.521: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:07:22 10.10.255.2 53: *Sep  2 10:07:21.942: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 09:43:27 10.10.255.2 54: *Sep  2 10:43:24.494: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 09:50:27 10.10.255.2 55: *Sep  2 10:50:24.862: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 09:51:18 10.10.255.2 56: *Sep  2 10:51:15.475: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 09:53:15 10.10.255.2 57: *Sep  2 10:53:12.905: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 09:54:01 10.10.255.2 58: *Sep  2 10:53:58.601: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:04:23 10.10.255.2 59: *Sep  2 11:04:21.091: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:04:37 10.10.255.2 60: *Sep  2 11:04:34.491: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:05:04 10.10.255.2 61: *Sep  2 11:05:01.417: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:06:09 10.10.255.2 62: *Sep  2 11:06:06.846: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:06:35 10.10.255.2 63: *Sep  2 11:06:32.828: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:11:28 10.10.255.2 64: *Sep  2 11:11:25.459: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:11:44 10.10.255.2 65: *Sep  2 11:11:41.943: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:12:09 10.10.255.2 66: *Sep  2 11:12:06.844: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:13:48 10.10.255.2 67: *Sep  2 11:13:45.734: %SYS-5-CONFIG_I: Configured from console by ennygaebs on vty0 (10.10.95.100)
+Sep  2 10:33:45 10.10.255.2 68: *Sep  2 11:33:42.576: %SYS-5-CONFIG_I: Configured from console by gaebs on console
+Sep 21 13:33:45 10.10.255.2 53: *Sep 21 13:33:45.189: %LINK-3-UPDOWN: Interface Ethernet1/1, changed state to up
+Sep 21 13:33:45 10.10.255.2 54: *Sep 21 13:33:46.197: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1/1, changed state to up
+Sep 21 13:35:08 10.10.255.2 55: *Sep 21 13:35:08.856: %LINK-5-CHANGED: Interface Ethernet1/1, changed state to administratively down
+Sep 21 13:35:08 10.10.255.2 56: *Sep 21 13:35:09.860: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1/1, changed state to down
+Sep 21 13:35:28 10.10.255.2 57: *Sep 21 13:35:28.810: %LINK-3-UPDOWN: Interface Ethernet1/1, changed state to up
+Sep 21 13:35:28 10.10.255.2 58: *Sep 21 13:35:29.817: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1/1, changed state to up
+Sep 21 13:35:46 10.10.255.2 59: *Sep 21 13:35:45.997: %LINK-5-CHANGED: Interface Ethernet1/1, changed state to administratively down
+Sep 21 13:35:46 10.10.255.2 60: *Sep 21 13:35:47.002: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1/1, changed state to down
+Sep 21 13:45:44 10.10.255.2 61: *Sep 21 13:45:44.418: %SYS-5-CONFIG_I: Configured from console by gaebs on console
